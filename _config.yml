@@ -3,19 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+charset: utf-8
+title: DaMing
+subtitle: 分享自学过程中的点点滴滴
+description: IT全栈，分享技术栈的点点滴滴
+author: niki
+language: zh-CN
 timezone:
+robots: index, follow
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.itqz.cc
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :lang/:category/:title/
 permalink_defaults:
+  lang: zh-CN
 
 # Directory
 source_dir: source
@@ -28,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :lang/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -72,7 +75,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: dev-dark-theme
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,3 +83,13 @@ deploy:
   type: git
   repository: https://github.com/dmee/dmee.github.io.git
   branch: master
+
+# RSS
+feed:
+  type: atom
+  path: 'atom.xml'
+  limit: 8
+  hub: 
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
