@@ -83,13 +83,3 @@ deploy:
   type: git
   repository: https://github.com/dmee/dmee.github.io.git
   branch: master
-
-# RSS
-feed:
-  type: atom
-  path: 'atom.xml'
-  limit: 8
-  hub: 
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
