@@ -1,6 +1,8 @@
 ---
 title: Flex弹性盒子模型布局
-tags: CSS Flex
+tags: 
+    - CSS
+    - Flex
 category: CSS
 date: 2018-01-26 17:04:43
 ---

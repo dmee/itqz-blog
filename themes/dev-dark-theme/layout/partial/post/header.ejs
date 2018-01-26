@@ -13,8 +13,8 @@
             <time 
                 class="description__day" 
                 datetime="<%- date(page.date, 'YYYY-MM-DD') %>" 
-                title="<%= __('published') %> <%- date(page.date, 'D MMM YYYY') %>"
-                itemprop="datePublished"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>        
+                title="<%= __('published') %> <%- date(page.date, 'YYYY-MM-DD HH:mm:ss') %>"
+                itemprop="datePublished"><%- full_date(page.date, 'YYYY-MM-DD HH:mm:ss') %></time>        
         </p>
     </div>
 </header>
