@@ -83,3 +83,9 @@ deploy:
   type: git
   repository: https://github.com/dmee/dmee.github.io.git
   branch: master
+
+autoprefixer:
+  exclude:
+    - '*.min.css'
+  browsers:
+    - 'last 2 versions'
