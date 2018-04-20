@@ -6,6 +6,13 @@ category: Git
 date: 2018-01-26 17:04:43
 ---
 
+## 仓库操作
+#### 查看远端仓库
+> git remote -v
+
+#### 本地项目关联远端项目
+> git remote add [shortname] [url]
+
 ## 分支操作
 
 #### 查看本地分支
@@ -23,3 +30,4 @@ date: 2018-01-26 17:04:43
 #### 抓取远端分支并清理已删除分支
 > git remote show origin
 > git remote prune origin
+
